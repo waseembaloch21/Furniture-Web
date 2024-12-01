@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark-mode{
+    background-color: black;
+    color: aliceblue;
+}
+
+.cartTotal{
+     background: rgba(249, 241, 231, 1);
+    
+}
+
+.img{
+
+  background: rgba(252, 248, 243, 1);
+}
+
+.total{
+color: rgba(184, 142, 47, 1);
+}
+
+.button{
+  background: rgba(184, 142, 47, 1);
+
+}
+
+.image{
+  width: 817px;
+  height: 500px;
+  top: 522px;
+  left: 100px;
+  gap: 0px;
+  border-radius: 10px 0px 0px 0px;
+  opacity: 0px;
+}
+
+
+.more{
+  border: 1px solid rgba(184, 142, 47, 1)
+}
+
+.btn{
+  border-color: rgba(184, 142, 47, 1);
+}
+
+.text{
+  color: rgba(184, 142, 47, 1);
+}
+
+.product{
+  background: rgba(244, 245, 247, 1);
+}
+
+
+ .uibtn{
+  height: 2.8em;
+  width: 9em;
+  background: whitesmoke;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  border: 2px solid whitesmoke;
+  outline: none;
+  color:  rgba(184, 142, 47, 1);
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.uibtn:hover {
+  background: rgba(184, 142, 47, 1);
+  color: #ffffff;
+  animation: squeeze3124 0.9s both;
+}
+
+@keyframes squeeze3124 {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
