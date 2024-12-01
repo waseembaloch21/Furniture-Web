@@ -10,7 +10,6 @@ import { CiSearch } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import img2 from '../assets/img2.png'
 
-
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { user, setUser } = useContext(UserContext);
@@ -21,7 +20,6 @@ function Header() {
   }
 
   return (
-
     <Link>
       <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -38,9 +36,13 @@ function Header() {
             </span>
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <Link to={'signin'} className="focus:outline-none font-serif text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900">
+          {user.isLogin ? (
+             <button onClick={handleLogoutUser} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium font-serif rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Logout</button>
+           ) : (
+             <Link to={'signin'} className="focus:outline-none font-serif text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900">
                Log in
              </Link>
+           )}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               type="button"
@@ -77,6 +79,20 @@ function Header() {
             </ul>
           </div>
         </div>
+      <div className='flex gap-9 items-center justify-center'>
+             <Link to={'blog'} className="  text-2xl  font-serif text-black">
+             <CiUser />
+           </Link>
+             <Link to={'checkOut'}  className="  text-2xl  font-serif text-black">
+             <CiSearch />
+           </Link>
+           <Link to={'productComparison'}  className="  text-2xl  font-serif text-black">
+           <GoHeart />
+           </Link>
+           <Link to={'cart'} className="text-2xl font-serif text-black">
+           <IoCartOutline />
+           </Link>
+             </div>
       </nav>
     </Link>
 
@@ -97,23 +113,19 @@ function Header() {
     //       </nav>
 
     //         <div className='flex gap-9'>
-
     //         <Link to={'blog'} className="  text-2xl  font-serif text-black">
     //         <CiUser />
     //       </Link>
     //         <Link to={'checkOut'}  className="  text-2xl  font-serif text-black">
     //         <CiSearch />
     //       </Link>
-
     //       <Link to={'productComparison'}  className="  text-2xl  font-serif text-black">
     //       <GoHeart />
     //       </Link>
-
     //       <Link to={'cart'} className="text-2xl font-serif text-black">
     //       <IoCartOutline />
     //       </Link>
     //         </div>
-
     //       {user?.isLogin ? (
     //         <img src={user?.userInfo?.photoURL} alt="" className='inline-block m-2 h-10 w-10 rounded-full ring-2 ring-white' />
     //       ) : (
