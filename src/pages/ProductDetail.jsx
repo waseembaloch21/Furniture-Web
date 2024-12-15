@@ -76,7 +76,7 @@ function ProductDetail() {
   
 
   return (
-    <div className="container mx-auto">
+    <div className="container mt-20 mx-auto">
       {loading ? (
         <h1 className="text-center font-serif text-3xl">Loading....</h1>
       ) : notFound ? (

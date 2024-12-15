@@ -32,7 +32,7 @@ function Home() {
   return (
 
     <div className='container mx-auto '>
-      <section className="text-gray-600 pt-10  body-font relative" data-aos="fade-up"  data-aos-duration="3000">
+      <section className="text-gray-600 pt-10 mt-20 body-font relative" data-aos="fade-up" data-aos-duration="3000">
         <div className="absolute  inset-0 bg-white">
           <img className=' container h-full w-full mx-auto' src={img1} alt="" />
         </div>
@@ -59,7 +59,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="text-gray-600 container mx-auto px-20 body-font" data-aos="fade-down"  data-aos-duration="3000">
+      <section className="text-gray-600 container mx-auto px-20 body-font" data-aos="fade-down" data-aos-duration="3000">
         <div className="container px-5 py-24 mx-auto">
           <h1 className='text-center text-black text-3xl font-medium '>Browse The Range</h1>
           <p className='text-center mb-12'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -280,7 +280,7 @@ function Home() {
       </section>
 
       <div className="container">
-        <section className="img"  data-aos="zoom-in-up" data-aos-duration="3000">
+        <section className="img" data-aos="zoom-in-up" data-aos-duration="3000">
           <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
             <div className="font-light text-gray-500 sm:text-lg dark:text-black">
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
@@ -313,7 +313,7 @@ function Home() {
       </div>
 
       <div className="container">
-        <section className="text-gray-600 body-font"  data-aos="zoom-in-up" data-aos-duration="3000">
+        <section className="text-gray-600 body-font" data-aos="zoom-in-up" data-aos-duration="3000">
           <div className="container px-5 py-24 mx-auto flex flex-wrap flex-col justify-center items-center">
             <p className="text-center font-normal text-black">Share your setup with</p>
             <h1 className="text-center text-black font-bold text-3xl">#FuniroFurniture</h1>

@@ -69,7 +69,7 @@ function Cart() {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mt-20">
       <div className="relative">
         <img
           className="h-60 w-full object-cover"

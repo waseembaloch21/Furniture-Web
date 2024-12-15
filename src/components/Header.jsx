@@ -21,7 +21,7 @@ function Header() {
 
   return (
     <Link>
-      <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+      <nav className="bg-white dark:bg-gray-900  fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -95,57 +95,6 @@ function Header() {
              </div>
       </nav>
     </Link>
-
-    // <Link>
-    //   <header className="body-font container mx-auto px-20">
-    //     <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    //       <img src={img2} alt=""
-    //         className='inline-block m-2 h-10 w-10' />
-    //       <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-    //         <span className="ml-3 text-2xl font-serif text-black">Funiro</span>
-    //       </a>
-
-    //       <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-    //         <Link to={"/"} className="mr-5 cursor-pointer  text-black font-bold font-serif hover:text-gray-900">Home</Link>
-    //         <Link to={'shop'} className="mr-5 cursor-pointer  text-black font-bold font-serif hover:text-gray-900">Shop</Link>
-    //         <Link to={'about'} className="mr-5 cursor-pointer  text-black font-bold font-serif hover:text-gray-900">About</Link>
-    //         <Link to={'contactUs'} className="mr-5 cursor-pointer  text-black font-bold font-serif hover:text-gray-900">Contact us</Link>
-    //       </nav>
-
-    //         <div className='flex gap-9'>
-    //         <Link to={'blog'} className="  text-2xl  font-serif text-black">
-    //         <CiUser />
-    //       </Link>
-    //         <Link to={'checkOut'}  className="  text-2xl  font-serif text-black">
-    //         <CiSearch />
-    //       </Link>
-    //       <Link to={'productComparison'}  className="  text-2xl  font-serif text-black">
-    //       <GoHeart />
-    //       </Link>
-    //       <Link to={'cart'} className="text-2xl font-serif text-black">
-    //       <IoCartOutline />
-    //       </Link>
-    //         </div>
-    //       {user?.isLogin ? (
-    //         <img src={user?.userInfo?.photoURL} alt="" className='inline-block m-2 h-10 w-10 rounded-full ring-2 ring-white' />
-    //       ) : (
-    //         <Link to={'signup'} className="focus:outline-none  font-serif text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium  rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">
-    //           Sign Up
-    //         </Link>
-    //       )}
-
-    //       {user.isLogin ? (
-    //         <button onClick={handleLogoutUser} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium font-serif rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Logout</button>
-    //       ) : (
-    //         <Link to={'signin'} className="focus:outline-none font-serif text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900">
-    //           Log in
-    //         </Link>
-    //       )}
-    //     </div>
-    //   </header>
-    // </Link>
-
   )
 }
-
 export default Header;

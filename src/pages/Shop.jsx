@@ -30,7 +30,7 @@ function Shop() {
 
   
   return (
-    <div className='container mx-auto'>
+    <div className='container mt-20 mx-auto'>
       <div className="relative container mx-auto">
         <img
           className="h-60 w-full object-cover"
@@ -38,7 +38,7 @@ function Shop() {
           alt="Cart Image"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-black bg-white bg-opacity-50">
-          <h1 className="text-3xl font-semibold">Shop</h1>
+          <h1 className="text-5xl font-semibold">Shop</h1>
           <h1 className="text-sm text-black">Home › Shop</h1>
         </div>
       </div>

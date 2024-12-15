@@ -2,7 +2,7 @@ import React from 'react'
 
 function CheckOut() {
   return (
-    <div>
+    <div className='mt-20'>
          <div className="relative">
         <img
           className="h-60 w-full object-cover"
