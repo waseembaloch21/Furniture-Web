@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -23,11 +23,21 @@ import img20 from '../assets/img20.png'
 import img21 from '../assets/img21.png'
 import img22 from '../assets/img22.png'
 
+import Loading from "../loading"; 
+
 function Home() {
+
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     AOS.init();
+    const timer = setTimeout(() => setIsLoading(false), 2000); 
+    return () => clearTimeout(timer);
   }, [])
+
+   if (isLoading) {
+      return <Loading />;
+    }
 
   return (
 
